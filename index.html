@@ -1,19 +1,19 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>KingMeta 4.3.3 — Stock Metadata, Prompt Generator & Upscaler</title>
-  <meta name="description" content="KingMeta is a Windows desktop toolkit for microstock contributors: Gemini-powered metadata generation, CSV export, a prompt generator and chat assistant, plus local video and full-color image upscaling." />
-  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
-  <meta name="theme-color" content="#101827" />
-  <link rel="canonical" href="https://kingmetabd.github.io/kingmeta-download/" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KingMeta 4.3.3 — Stock Metadata, Prompt Generator &amp; Upscaler</title>
+  <meta name="description" content="KingMeta is a Windows desktop toolkit for microstock contributors: Gemini-powered metadata generation, CSV export, an image prompt generator and chat assistant, plus local video and full-color image upscaling.">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <meta name="theme-color" content="#0b1220">
+  <link rel="canonical" href="https://kingmetabd.github.io/kingmeta-download/">
 
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="KingMeta 4.3.3 — Metadata, Prompts & Upscaling" />
-  <meta property="og:description" content="Generate stock metadata and CSV files, build image-generation prompts, chat with KingMeta AI, and upscale video or batches of images from one Windows desktop app." />
-  <meta property="og:url" content="https://kingmetabd.github.io/kingmeta-download/" />
-  <meta property="og:site_name" content="KingMeta" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="KingMeta 4.3.3 — Metadata, Prompts &amp; Upscaling">
+  <meta property="og:description" content="Generate stock metadata and CSV files, create image-generation prompts, chat with KingMeta AI, and upscale video or image batches from one Windows desktop app.">
+  <meta property="og:url" content="https://kingmetabd.github.io/kingmeta-download/">
+  <meta property="og:site_name" content="KingMeta">
 
   <script type="application/ld+json">
   {
@@ -23,7 +23,7 @@
     "softwareVersion": "4.3.3",
     "operatingSystem": "Windows 10, Windows 11",
     "applicationCategory": "DesignApplication",
-    "description": "A Windows desktop toolkit for microstock metadata generation, stock-agency CSV export, Gemini-powered prompt generation and chat, and local video and full-color image upscaling.",
+    "description": "A Windows desktop toolkit for microstock metadata generation, stock-agency CSV export, Gemini-powered prompt generation and chat, plus local video and full-color image upscaling.",
     "url": "https://kingmetabd.github.io/kingmeta-download/",
     "downloadUrl": "https://github.com/kingmetabd/kingmeta-download/releases"
   }
@@ -43,6 +43,7 @@
       --cyan: #67d5ff;
       --purple: #a99bff;
     }
+
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
     body {
@@ -56,59 +57,213 @@
       font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       line-height: 1.65;
     }
+
     a { color: var(--cyan); }
     a:focus-visible, button:focus-visible { outline: 3px solid var(--cyan); outline-offset: 3px; }
     .wrapper { width: min(1080px, 100%); margin: 0 auto; }
-    .header, .section, .faq, .notice {
+    .header, .section, .faq, .notice, .screenshots-section {
       background: rgba(19, 30, 48, .94);
       border: 1px solid var(--border);
       border-radius: 18px;
       box-shadow: 0 14px 40px rgba(0, 0, 0, .18);
     }
-    .header { text-align: center; padding: clamp(30px, 6vw, 58px) clamp(18px, 5vw, 54px); margin-bottom: 24px; }
-    .badge {
-      display: inline-flex; align-items: center; gap: 7px;
-      padding: 6px 13px; margin-bottom: 15px;
-      border: 1px solid rgba(34, 197, 94, .32); border-radius: 999px;
-      background: rgba(34, 197, 94, .10); color: #86efac;
-      font-size: .85rem; font-weight: 750;
+    .header {
+      text-align: center;
+      padding: clamp(30px, 6vw, 58px) clamp(18px, 5vw, 54px);
+      margin-bottom: 24px;
     }
-    h1 { margin: 0 0 12px; font-size: clamp(2.05rem, 6vw, 3.5rem); line-height: 1.12; letter-spacing: -.045em; }
-    .hero-title { background: linear-gradient(90deg, #fff, #bbf7d0 48%, #a5e5ff); -webkit-background-clip: text; background-clip: text; color: transparent; }
-    .subtitle { max-width: 800px; margin: 0 auto 23px; color: var(--muted); font-size: clamp(1rem, 2.1vw, 1.2rem); }
-    .actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin: 22px 0 12px; }
-    .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 12px 22px; border: 1px solid transparent; border-radius: 10px; font-weight: 800; text-decoration: none; transition: transform .15s ease, background .15s ease; }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 6px 13px;
+      margin-bottom: 15px;
+      border: 1px solid rgba(34, 197, 94, .32);
+      border-radius: 999px;
+      background: rgba(34, 197, 94, .10);
+      color: #86efac;
+      font-size: .85rem;
+      font-weight: 750;
+    }
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(2.05rem, 6vw, 3.5rem);
+      line-height: 1.12;
+      letter-spacing: -.045em;
+    }
+    .hero-title {
+      background: linear-gradient(90deg, #fff, #bbf7d0 48%, #a5e5ff);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .subtitle {
+      max-width: 800px;
+      margin: 0 auto 23px;
+      color: var(--muted);
+      font-size: clamp(1rem, 2.1vw, 1.2rem);
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin: 22px 0 12px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 12px 22px;
+      border: 1px solid transparent;
+      border-radius: 10px;
+      font-weight: 800;
+      text-decoration: none;
+      transition: transform .15s ease, background .15s ease;
+    }
     .btn:hover { transform: translateY(-1px); }
-    .btn-primary { color: #052e16; background: var(--primary); box-shadow: 0 5px 18px rgba(34, 197, 94, .2); }
+    .btn-primary {
+      color: #052e16;
+      background: var(--primary);
+      box-shadow: 0 5px 18px rgba(34, 197, 94, .2);
+    }
     .btn-primary:hover { background: var(--primary-hover); color: white; }
     .btn-secondary { color: var(--text); background: var(--panel-2); border-color: var(--border); }
     .meta-info { margin-top: 12px; font-size: .9rem; color: var(--muted); }
-    .formats-bar { display: inline-block; margin-top: 19px; padding: 9px 13px; border: 1px solid var(--border); border-radius: 10px; color: #bbf7d0; background: var(--panel-2); font-size: .9rem; }
-    .section { padding: clamp(22px, 4vw, 34px); margin-bottom: 24px; }
-    .section-heading { margin: 0 0 7px; font-size: clamp(1.45rem, 3vw, 1.9rem); letter-spacing: -.025em; }
+    .formats-bar {
+      display: inline-block;
+      margin-top: 19px;
+      padding: 9px 13px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      color: #bbf7d0;
+      background: var(--panel-2);
+      font-size: .9rem;
+    }
+
+    .section, .screenshots-section { padding: clamp(22px, 4vw, 34px); margin-bottom: 24px; }
+    .section-heading, .screenshots-heading {
+      margin: 0 0 7px;
+      font-size: clamp(1.45rem, 3vw, 1.9rem);
+      letter-spacing: -.025em;
+    }
     .section-intro { margin: 0 0 22px; max-width: 780px; color: var(--muted); }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 270px), 1fr)); gap: 15px; }
-    .feature { min-height: 100%; padding: 21px; background: var(--panel-2); border: 1px solid var(--border); border-radius: 14px; }
-    .feature-icon { display: grid; place-items: center; width: 44px; height: 44px; margin-bottom: 12px; border-radius: 12px; background: rgba(103, 213, 255, .10); border: 1px solid rgba(103, 213, 255, .18); font-size: 1.35rem; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 270px), 1fr));
+      gap: 15px;
+    }
+    .feature {
+      min-height: 100%;
+      padding: 21px;
+      background: var(--panel-2);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+    }
+    .feature-icon {
+      display: grid;
+      place-items: center;
+      width: 44px;
+      height: 44px;
+      margin-bottom: 12px;
+      border-radius: 12px;
+      background: rgba(103, 213, 255, .10);
+      border: 1px solid rgba(103, 213, 255, .18);
+      font-size: 1.35rem;
+    }
     .feature h3 { margin: 0 0 7px; font-size: 1.08rem; }
     .feature p { margin: 0; color: var(--muted); font-size: .95rem; }
-    .tag { display: inline-block; margin-top: 13px; border-radius: 6px; padding: 3px 8px; background: rgba(169, 155, 255, .10); color: #c6bdff; font-size: .77rem; font-weight: 700; }
-    .two-col { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 20px; }
+    .tag, .screenshot-label {
+      display: inline-block;
+      margin-top: 13px;
+      border-radius: 6px;
+      padding: 3px 8px;
+      background: rgba(169, 155, 255, .10);
+      color: #c6bdff;
+      font-size: .77rem;
+      font-weight: 700;
+    }
+
+    /* Screenshot gallery */
+    .screenshots-heading { text-align: center; }
+    .screenshots-intro {
+      max-width: 780px;
+      margin: 0 auto 24px;
+      text-align: center;
+      color: var(--muted);
+    }
+    .screenshots-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+    }
+    .screenshot-card {
+      overflow: hidden;
+      background: var(--panel-2);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      transition: transform .2s ease, border-color .2s ease;
+    }
+    .screenshot-card:hover { transform: translateY(-3px); border-color: var(--primary); }
+    .screenshot-image-link {
+      display: block;
+      line-height: 0;
+      background: #080d17;
+    }
+    .screenshot-card img {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 16 / 10;
+      object-fit: contain;
+      background: #080d17;
+    }
+    .screenshot-caption { padding: 17px 18px 19px; }
+    .screenshot-caption h3 { margin: 0 0 6px; font-size: 1.08rem; }
+    .screenshot-caption p { margin: 0; color: var(--muted); font-size: .94rem; }
+    .screenshot-label {
+      background: rgba(34, 197, 94, .10);
+      color: #86efac;
+      font-size: .78rem;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+      gap: 20px;
+    }
     .list { margin: 12px 0 0; padding-left: 21px; color: var(--muted); }
     .list li { margin-bottom: 8px; }
-    .notice { padding: 17px 20px; margin: 0 0 24px; border-left: 4px solid var(--primary); color: var(--muted); box-shadow: none; }
+    .notice {
+      padding: 17px 20px;
+      margin: 0 0 24px;
+      border-left: 4px solid var(--primary);
+      color: var(--muted);
+      box-shadow: none;
+    }
     .notice strong { color: var(--text); }
+    .faq { padding: clamp(22px, 4vw, 34px); margin-bottom: 24px; }
     .faq-item { padding: 16px 0; border-top: 1px solid var(--border); }
     .faq-item:first-of-type { border-top: 0; }
     .faq-item h3 { margin: 0 0 5px; font-size: 1rem; }
     .faq-item p { margin: 0; color: var(--muted); }
     code { padding: 2px 5px; border-radius: 5px; background: var(--panel-2); color: #d8e4f7; }
-    footer { max-width: 780px; margin: 0 auto; padding: 12px 8px 4px; text-align: center; color: var(--muted); font-size: .86rem; }
-    @media (max-width: 560px) {
+    footer {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 12px 8px 4px;
+      text-align: center;
+      color: var(--muted);
+      font-size: .86rem;
+    }
+    @media (max-width: 650px) {
       body { padding: 12px 10px; }
       .header { border-radius: 14px; }
       .actions { display: grid; grid-template-columns: 1fr; }
       .btn { width: 100%; }
+      .screenshots-grid { grid-template-columns: 1fr; }
+      .screenshots-section { padding: 20px 14px; }
     }
   </style>
 </head>
@@ -117,11 +272,15 @@
     <header class="header">
       <span class="badge">✨ KingMeta Desktop Toolkit · Version 4.3.3</span>
       <h1><span class="hero-title">Create Metadata. Build Prompts. Upscale Media.</span></h1>
-      <p class="subtitle">KingMeta brings microstock metadata generation, stock-agency CSV export, a Gemini-powered prompt generator and chat assistant, plus video and full-color batch image upscaling into one Windows desktop application.</p>
+      <p class="subtitle">
+        KingMeta brings microstock metadata generation, stock-agency CSV export,
+        a Gemini-powered prompt generator and chat assistant, plus video and
+        full-color batch image upscaling into one Windows desktop application.
+      </p>
       <div class="actions">
-        <!-- This opens the repository's Releases page. Publish the v4.3.3 installer there before advertising it as the current downloadable version. -->
         <a class="btn btn-primary" href="https://github.com/kingmetabd/kingmeta-download/releases" target="_blank" rel="noopener noreferrer">View Downloads on GitHub ↗</a>
         <a class="btn btn-secondary" href="#features">Explore Features</a>
+        <a class="btn btn-secondary" href="#screenshots">View Screenshots</a>
       </div>
       <p class="meta-info">Windows 10 / Windows 11 · Desktop application · Local media processing tools</p>
       <div class="formats-bar"><strong>Metadata:</strong> EPS · AI · SVG · PSD · Photos · Videos &nbsp;|&nbsp; <strong>Upscaler:</strong> Video + Image Batch</div>
@@ -129,115 +288,189 @@
 
     <section class="section" id="features" aria-labelledby="features-title">
       <h2 class="section-heading" id="features-title">Everything in KingMeta</h2>
-      <p class="section-intro">A practical toolkit for stock creators who need to prepare metadata, develop image-generation prompts, and resize or enhance media without switching between several separate desktop tools.</p>
+      <p class="section-intro">A practical toolkit for stock creators who need to prepare metadata, develop image-generation prompts, chat with an assistant, and resize or enhance media without switching between several separate desktop tools.</p>
       <div class="grid">
         <article class="feature">
           <div class="feature-icon" aria-hidden="true">🏷️</div>
           <h3>Gemini-Powered Metadata Generator</h3>
-          <p>Generate titles, descriptions, and keyword lists for supported photos, videos, vector artwork, and design files. Review results before submitting them to a stock marketplace.</p>
+          <p>Generate titles, descriptions, and keyword lists for supported photos, videos, vector artwork, and design files. Review generated metadata before using it in a stock marketplace workflow.</p>
           <span class="tag">Metadata workflow</span>
         </article>
         <article class="feature">
           <div class="feature-icon" aria-hidden="true">📊</div>
           <h3>Stock Agency CSV Export</h3>
-          <p>Export metadata in CSV workflows for stock contributors. Prepare your title, description, keywords, and category information for supported agency submission formats.</p>
-          <span class="tag">Batch-friendly</span>
+          <p>Export metadata as CSV files for stock-contributor workflows. Prepare titles, descriptions, keywords, and other supported fields for agency submission formats.</p>
+          <span class="tag">CSV export</span>
         </article>
         <article class="feature">
           <div class="feature-icon" aria-hidden="true">✨</div>
           <h3>Prompt Generator</h3>
-          <p>Create and refine text-to-image prompts from written instructions and supported image references. Use the generator to develop prompts for different visual directions and creative niches.</p>
+          <p>Create and refine text-to-image prompts from written instructions and supported image references. Develop prompts for different visual styles and creative niches.</p>
           <span class="tag">Text + image references</span>
         </article>
         <article class="feature">
           <div class="feature-icon" aria-hidden="true">💬</div>
           <h3>Built-In Gemini Chat Assistant</h3>
-          <p>Chat with KingMeta AI inside the desktop app for general help, creative planning, and prompt-development guidance. The interface is local to the app; Gemini responses use the configured API key and internet access.</p>
-          <span class="tag">API key and internet required</span>
+          <p>Chat with KingMeta AI inside the desktop application for general help, creative planning, and prompt-development guidance. Gemini responses require a configured API key and internet access.</p>
+          <span class="tag">API key + internet required</span>
         </article>
         <article class="feature">
           <div class="feature-icon" aria-hidden="true">🎞️</div>
           <h3>Video Upscaler</h3>
-          <p>Resize videos to selected output heights up to 4K and 8K, keep or remove audio, choose H.264 or H.265, and adjust denoise and quality settings. Processing uses FFmpeg-based resizing and enhancement.</p>
+          <p>Choose output heights including 2160p (4K) and 4320p (8K), keep or remove audio, choose H.264 or H.265, and adjust denoise and quality settings. Video processing uses FFmpeg-based resizing and enhancement.</p>
           <span class="tag">FFmpeg processing</span>
         </article>
         <article class="feature">
           <div class="feature-icon" aria-hidden="true">🖼️</div>
           <h3>Full-Color Batch Image Upscaler</h3>
-          <p>Process multiple images in one batch, choose 2×–6× scaling, select PNG or JPG output, and adjust enhancement strength, color denoise, and presets. The current image path uses Lanczos resizing and image enhancement, not Real-ESRGAN AI reconstruction.</p>
+          <p>Process several images in one batch, choose 2×–6× scaling, select PNG or JPG output, and adjust enhancement strength, color denoise, and presets. The current image workflow uses Lanczos resizing and enhancement, not Real-ESRGAN AI reconstruction.</p>
           <span class="tag">PNG / JPG batch output</span>
         </article>
         <article class="feature">
           <div class="feature-icon" aria-hidden="true">📁</div>
-          <h3>Batch Workflow & File Renaming</h3>
-          <p>Prepare multiple assets, review metadata, and organize output for a more efficient stock-contributor workflow.</p>
+          <h3>Batch Workflow &amp; File Renaming</h3>
+          <p>Work with multiple assets, review generated metadata, retry processing where supported, and organize output for a more efficient stock-contributor workflow.</p>
           <span class="tag">Creator productivity</span>
         </article>
         <article class="feature">
           <div class="feature-icon" aria-hidden="true">🧰</div>
           <h3>One Windows Desktop App</h3>
-          <p>Open the metadata tools, prompt workspace, chat assistant, and local upscaler from KingMeta instead of managing separate browser-based services for each task.</p>
+          <p>Access metadata tools, prompt generation, chat assistance, and the local upscaler from one KingMeta desktop application.</p>
           <span class="tag">Windows desktop</span>
         </article>
       </div>
     </section>
 
-    <div class="notice"><strong>AI and connectivity note:</strong> The metadata generator, prompt generator, and Gemini chat need a configured Gemini API key and internet access. The Upscaler interface runs locally on the user's PC. Video processing uses FFmpeg; image upscaling uses Lanczos resizing and enhancement in the current build. Ghostscript is not bundled and must be installed separately for EPS/AI preview or rendering features that require it.</div>
+    <section class="screenshots-section" id="screenshots" aria-labelledby="screenshots-heading">
+      <h2 class="screenshots-heading" id="screenshots-heading">Explore KingMeta in Action</h2>
+      <p class="screenshots-intro">See the actual KingMeta interface, metadata workflow, prompt generator, and media upscaling tools. Select any screenshot to open the full-size image.</p>
+      <div class="screenshots-grid">
+        <article class="screenshot-card">
+          <a class="screenshot-image-link" href="images/metadata-generator.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-size metadata generator screenshot">
+            <img src="images/metadata-generator.png" alt="KingMeta metadata generator desktop interface" loading="lazy">
+          </a>
+          <div class="screenshot-caption">
+            <h3>AI Metadata Generator</h3>
+            <p>Generate and review stock titles, descriptions, and keyword lists for supported assets.</p>
+            <span class="screenshot-label">Metadata &amp; SEO</span>
+          </div>
+        </article>
+
+        <article class="screenshot-card">
+          <a class="screenshot-image-link" href="images/prompt-generator.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-size prompt generator screenshot">
+            <img src="images/prompt-generator.png" alt="KingMeta prompt generator interface" loading="lazy">
+          </a>
+          <div class="screenshot-caption">
+            <h3>Prompt Generator &amp; Chat</h3>
+            <p>Create image-generation prompts and use the built-in Gemini-backed chat assistant.</p>
+            <span class="screenshot-label">Prompts &amp; Chat</span>
+          </div>
+        </article>
+
+        <article class="screenshot-card">
+          <a class="screenshot-image-link" href="images/video-upscaler.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-size video upscaler screenshot">
+            <img src="images/video-upscaler.png" alt="KingMeta video upscaler interface and settings" loading="lazy">
+          </a>
+          <div class="screenshot-caption">
+            <h3>Video Upscaler</h3>
+            <p>Configure output resolution, codec, video quality, denoise, and audio options.</p>
+            <span class="screenshot-label">Video Processing</span>
+          </div>
+        </article>
+
+        <article class="screenshot-card">
+          <a class="screenshot-image-link" href="images/Screenshot%202026-10-25%20072208.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-size KingMeta screenshot from October 25 at 07:22:08">
+            <img src="images/Screenshot%202026-10-25%20072208.png" alt="KingMeta desktop application screenshot, captured October 25, 2026" loading="lazy">
+          </a>
+          <div class="screenshot-caption">
+            <h3>KingMeta Desktop Workspace</h3>
+            <p>A view of KingMeta's integrated desktop interface and available tools.</p>
+            <span class="screenshot-label">Desktop Workspace</span>
+          </div>
+        </article>
+
+        <article class="screenshot-card">
+          <a class="screenshot-image-link" href="images/Screenshot%202026-10-25%20072256.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-size KingMeta screenshot from October 25 at 07:22:56">
+            <img src="images/Screenshot%202026-10-25%20072256.png" alt="KingMeta application screenshot, captured October 25, 2026" loading="lazy">
+          </a>
+          <div class="screenshot-caption">
+            <h3>Integrated Creator Tools</h3>
+            <p>Explore the application interface used to access KingMeta's creator workflow.</p>
+            <span class="screenshot-label">Creator Workflow</span>
+          </div>
+        </article>
+
+        <article class="screenshot-card">
+          <a class="screenshot-image-link" href="images/Screenshot%202026-10-25%20072332.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-size KingMeta screenshot from October 25 at 07:23:32">
+            <img src="images/Screenshot%202026-10-25%20072332.png" alt="KingMeta application screenshot, captured October 25, 2026" loading="lazy">
+          </a>
+          <div class="screenshot-caption">
+            <h3>KingMeta in Use</h3>
+            <p>Another view of the KingMeta desktop application and its workspace.</p>
+            <span class="screenshot-label">Application Preview</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <div class="notice">
+      <strong>AI and connectivity:</strong> Metadata generation, prompt generation, and Gemini chat require a configured Gemini API key and internet access. The Upscaler interface runs locally on the user's PC. Video processing uses FFmpeg; image upscaling in the current build uses Lanczos resizing and image enhancement rather than Real-ESRGAN model-based reconstruction. Ghostscript is not bundled and must be installed separately for EPS/AI preview or rendering features that require it.
+    </div>
 
     <section class="section" aria-labelledby="setup-title">
       <div class="two-col">
         <div>
           <h2 class="section-heading" id="setup-title">Quick Setup</h2>
           <ol class="list">
-            <li>Open the GitHub Releases page and download the intended KingMeta installer.</li>
+            <li>Open the GitHub Releases page and download the version you intend to install.</li>
             <li>Run the installer on a compatible Windows 10 or Windows 11 PC.</li>
-            <li>Launch KingMeta and complete any required trial, activation, or API-key setup.</li>
-            <li>Use metadata and prompt tools as needed; click <strong>4K UPSCALER</strong> to open the local video/image upscaler.</li>
+            <li>Launch KingMeta and complete any required trial, activation, and API-key setup.</li>
+            <li>Use the metadata and prompt tools as needed; click <strong>4K UPSCALER</strong> to open the local video and image upscaler.</li>
           </ol>
         </div>
         <div>
           <h2 class="section-heading">Before You Start</h2>
           <ul class="list">
             <li>Gemini-backed features require a valid API key and internet connectivity.</li>
-            <li>The local upscaler opens in your browser through a service running on your own PC; it is not a public website server.</li>
+            <li>The upscaler runs locally on your PC; <code>127.0.0.1:5000</code> is a local address, not a public website.</li>
             <li>Large video files and high-resolution image batches may take substantial time and disk space.</li>
-            <li>For EPS/AI preview or rendering functions that rely on Ghostscript, install Ghostscript separately.</li>
+            <li>Install Ghostscript separately for EPS/AI preview or rendering functions that rely on it.</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <section class="faq" aria-labelledby="faq-title" style="padding: clamp(22px, 4vw, 34px); margin-bottom: 24px;">
+    <section class="faq" aria-labelledby="faq-title">
       <h2 class="section-heading" id="faq-title">Frequently Asked Questions</h2>
       <div class="faq-item">
         <h3>What is KingMeta?</h3>
-        <p>KingMeta is a Windows desktop toolkit for microstock contributors and designers. It combines metadata generation and CSV export with prompt creation, an in-app Gemini chat assistant, and video/image upscaling tools.</p>
+        <p>KingMeta is a Windows desktop toolkit for microstock contributors and designers. It combines metadata generation and CSV export with prompt creation, an in-app Gemini-backed chat assistant, and video and image upscaling tools.</p>
       </div>
       <div class="faq-item">
         <h3>Does the Gemini chatbot work offline?</h3>
-        <p>No. The chat interface is built into KingMeta and runs on the desktop, but Gemini replies are generated through the Gemini API. A configured API key and internet connection are required.</p>
+        <p>No. The chat interface is integrated into KingMeta, but Gemini responses are generated through the Gemini API. A configured API key and internet connection are required.</p>
       </div>
       <div class="faq-item">
         <h3>Is image upscaling powered by Real-ESRGAN?</h3>
-        <p>The current image-batch workflow uses Lanczos resizing plus color, contrast, sharpening, and optional denoise enhancements. Do not treat it as AI model-based reconstruction.</p>
+        <p>The current image-batch workflow uses Lanczos resizing with color, contrast, sharpening, and optional denoise enhancements. It does not use Real-ESRGAN AI reconstruction.</p>
       </div>
       <div class="faq-item">
-        <h3>Can I upscale videos to 4K?</h3>
-        <p>The video tool offers selectable output heights including 2160p (4K) and 4320p (8K), with FFmpeg-based resizing and quality controls. Output quality depends on the source video and selected settings; enlarging a video does not recover detail that was never present.</p>
+        <h3>Can I upscale videos to 4K or 8K?</h3>
+        <p>The video tool offers output heights including 2160p (4K) and 4320p (8K), with FFmpeg-based resizing and quality controls. Enlarging a video does not restore detail that was absent in the source.</p>
       </div>
       <div class="faq-item">
         <h3>Which file types does KingMeta support?</h3>
-        <p>The metadata workflow supports vector/design assets such as EPS, AI, SVG, and PSD, along with supported photo and video formats. The upscaler has its own supported image and video file selections.</p>
+        <p>The metadata workflow supports vector and design assets such as EPS, AI, SVG, and PSD, along with supported photo and video formats. The upscaler has its own supported image and video file selections.</p>
       </div>
       <div class="faq-item">
-        <h3>Where do I download the latest version?</h3>
-        <p>Use the <a href="https://github.com/kingmetabd/kingmeta-download/releases" target="_blank" rel="noopener noreferrer">GitHub Releases page</a>. Make sure the v4.3.3 installer is uploaded there before publishing this page as the v4.3.3 download page.</p>
+        <h3>Where can I download KingMeta?</h3>
+        <p>Visit the <a href="https://github.com/kingmetabd/kingmeta-download/releases" target="_blank" rel="noopener noreferrer">KingMeta GitHub Releases page</a> to see available downloads. Confirm that the intended version is published before sharing the download link.</p>
       </div>
     </section>
 
     <footer>
       <p>© KingMeta · Desktop tools for microstock metadata, prompts, and media upscaling.</p>
-      <p>Product features and requirements can vary by release. Always review the release notes for the version you download.</p>
+      <p>Features and requirements can vary by release. Review the release notes for the version you download.</p>
     </footer>
   </main>
 </body>
